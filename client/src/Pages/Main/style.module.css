@@ -1,0 +1,66 @@
+.mainWrapper {
+  width: 1220px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  .headerBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .textHeader {
+      font: 500 60px "Lexend";
+      color: white;
+      width: 315px;
+      margin-top: 140px;
+      .gambling {
+        color: #478bf9;
+      }
+    }
+
+    .paragraphHeader {
+      font: 500 15px "Lexend";
+      color: #ffffff99;
+      margin-bottom: 10px;
+    }
+
+    .partnership {
+      width: 200px;
+      height: 40px;
+      padding: 13px 44px;
+      border-radius: 48px;
+      background: #478bf9;
+      color: white;
+      font: 600 10px "Lexend";
+      text-transform: uppercase;
+    }
+  }
+
+  .pictureBlock {
+    display: flex;
+    width: 300px;
+    .linePicture1 {
+      background-image: url(../../assets/Line_Vertical_1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 500px;
+      opacity: 1px;
+    }
+    .linePicture2 {
+      background-image: url(../../assets/Line_Vertical_2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 500px;
+      opacity: 1px;
+    }
+    .linePicture3 {
+      background-image: url(../../assets/Line_Vertical_3.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 500px;
+      opacity: 1px;
+    }
+  }
+}
