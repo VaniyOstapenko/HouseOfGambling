@@ -8,9 +8,9 @@
     flex-direction: column;
     gap: 10px;
     .textHeader {
-      font: 500 60px "Lexend";
+      font: 500 75px "Lexend";
       color: white;
-      width: 315px;
+      width: 400px;
       margin-top: 140px;
       .gambling {
         color: #478bf9;
@@ -18,15 +18,15 @@
     }
 
     .paragraphHeader {
-      font: 500 15px "Lexend";
+      font: 500 20px "Lexend";
       color: #ffffff99;
       margin-bottom: 10px;
     }
 
     .partnership {
-      width: 200px;
+      width: 250px;
       height: 40px;
-      padding: 13px 44px;
+      padding: 13px 70px;
       border-radius: 48px;
       background: #478bf9;
       color: white;
@@ -37,6 +37,7 @@
 
   .pictureBlock {
     display: flex;
+    gap: 7px;
     width: 300px;
     .linePicture1 {
       background-image: url(../../assets/Line_Vertical_1.png);
@@ -61,6 +62,16 @@
       width: 50px;
       height: 500px;
       opacity: 1px;
+    }
+  }
+
+  .scrollBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .blog {
+      font: 500 45px "Lexend";
+      color: white;
     }
   }
 }
