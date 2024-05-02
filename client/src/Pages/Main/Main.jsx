@@ -1,6 +1,34 @@
+import { useState } from "react";
 import style from "./style.module.css";
 
 function Main() {
+  const [text, setText] = useState([
+    {
+      paragraph: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+      date: "10.02.2023",
+    },
+    {
+      paragraph: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+      date: "10.02.2023",
+    },
+    {
+      paragraph: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+      date: "10.02.2023",
+    },
+    {
+      paragraph: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+      date: "10.02.2023",
+    },
+    {
+      paragraph: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+      date: "10.02.2023",
+    },
+    {
+      paragraph: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+      date: "10.02.2023",
+    },
+  ]);
+
   return (
     <div className={style.mainWrapper}>
       <div className={style.headerBlock}>
@@ -21,7 +49,14 @@ function Main() {
 
       <div className={style.scrollBlock}>
         <h1 className={style.blog}>BLOG</h1>
-        <div className={style.scrollText}></div>
+        <div className={style.scrollText}>
+          {text.map((el) => (
+            <div className={style.list}>
+              <p className={style.pArr1}>{el.paragraph}</p>
+              <p className={style.pArr2}>{el.date}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
