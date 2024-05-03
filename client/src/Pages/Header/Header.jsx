@@ -1,6 +1,12 @@
+import { useState } from "react";
 import style from "./style.module.css";
 
 function Header() {
+  const [language, setLanguage] = useState("EN");
+
+  function clickLanguage() {
+    language === "EN" ? setLanguage("RU") : setLanguage("EN");
+  }
   return (
     <div className={style.headerWrapper}>
       <div className={style.paragraphsHeader}>
@@ -12,8 +18,8 @@ function Header() {
         <p>Careers</p>
       </div>
       <div className={style.buttonHeader}>
-        <div className={style.language}>
-          <div className={style.languagePicture}></div> EN
+        <div className={style.language} onClick={clickLanguage}>
+          <div className={style.languagePicture}></div> {language}
         </div>
         <div className={style.logIn}>LOG IN</div>
         <div className={style.signIn}>SIGN UP</div>

@@ -7,7 +7,9 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 48px;
-
+  position: relative;
+  z-index: 1;
+  background-color: rgb(24, 15, 42);
   .paragraphsHeader {
     display: flex;
     justify-content: space-around;
