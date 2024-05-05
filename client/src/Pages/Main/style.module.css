@@ -66,6 +66,10 @@
       width: 50px;
       height: 500px;
       opacity: 1px;
+      position: absolute;
+      left: 749px;
+      z-index: 0;
+      animation: moveDown ease 1s infinite alternate;
     }
   }
 
