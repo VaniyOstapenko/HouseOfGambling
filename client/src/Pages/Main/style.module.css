@@ -44,10 +44,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 50px;
-      height: 500px;
+      height: 560px;
       opacity: 1px;
       position: absolute;
-      left: 636px;
+      left: 710px;
       z-index: 0;
       animation: moveDown ease 1s infinite alternate;
     }
@@ -56,20 +56,24 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 50px;
-      height: 500px;
+      height: 600px;
+      position: absolute;
+      z-index: 0;
+      left: 768px;
       opacity: 1px;
+      animation: moveUp ease 4s infinite alternate;
     }
     .linePicture3 {
       background-image: url(../../assets/Line_Vertical_3.png);
       background-repeat: no-repeat;
       background-size: cover;
       width: 50px;
-      height: 500px;
+      height: 560px;
       opacity: 1px;
       position: absolute;
-      left: 749px;
+      left: 826px;
       z-index: 0;
-      animation: moveDown ease 1s infinite alternate;
+      animation: moveDown ease 0.7s infinite alternate;
     }
   }
 
@@ -134,9 +138,24 @@
 
 @keyframes moveDown {
   0% {
-    top: -90px;
+    top: 50px;
+  }
+  50% {
+    bottom: 0;
   }
   100% {
-    top: 90px;
+    top: 120px;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 70px;
   }
 }

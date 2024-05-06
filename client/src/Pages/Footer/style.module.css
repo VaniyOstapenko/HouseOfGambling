@@ -6,6 +6,10 @@
   border-radius: 60px 60px 0 0;
   padding: 32px;
   border-bottom: 0;
+  position: relative;
+  z-index: 1;
+  top: 30px;
+  background-color: #13062f;
   .blockPage {
     width: 1220px;
     margin: auto;
