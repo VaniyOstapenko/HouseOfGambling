@@ -104,11 +104,11 @@
 
       &::-webkit-scrollbar-thumb {
         background: #478bf9;
-        border-radius: 5px;
+        border-radius: 10px;
       }
 
       &::-webkit-scrollbar-track {
-        margin: 100px 0;
+        margin: 100px;
         border-radius: 10px;
         background: #c1c1c1;
       }
@@ -157,5 +157,11 @@
   }
   100% {
     bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainWrapper {
+    overflow: hidden;
   }
 }
