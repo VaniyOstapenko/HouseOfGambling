@@ -62,3 +62,99 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .headerWrapper {
+    border: 2px solid #478bf9;
+    border-radius: 64px;
+    width: 300px;
+    height: 56px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    .paragraphsHeader {
+      display: none;
+    }
+    .buttonHeader {
+      .language {
+        div {
+          font: 100 0px "Lexend";
+        }
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+        border-radius: 24px;
+        border: 2px solid #9dadf2;
+        .languagePicture {
+          background-image: url(../../assets/language-picture.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .logIn {
+        display: none;
+      }
+      .signIn {
+        display: none;
+      }
+    }
+    .burgerMenu {
+      .burger {
+        background-image: url(../../assets/burger.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 28px;
+        height: 28px;
+      }
+      .cross {
+        background-image: url(../../assets/cross.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 28px;
+        height: 28px;
+        .adaptiveParagraph {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          position: relative;
+          top: 70px;
+          right: 261px;
+          p {
+            width: 300px;
+            height: 50px;
+            padding: 13px;
+            border-radius: 28px;
+            border: 2px solid #478bf9;
+            color: white;
+            font: 400 18px "Lexend";
+            background-color: rgb(16, 5, 44);
+          }
+          .logInAdaptive {
+            width: 300px;
+            height: 46px;
+            padding: 13px 120px;
+            border-radius: 24px;
+            border: 2px solid #9dadf2;
+            color: white;
+            background: #1e1231;
+            font: 400 13px "Lexend";
+          }
+          .signInAdaptive {
+            width: 300px;
+            height: 46px;
+            padding: 13px 120px;
+            border-radius: 24px;
+            border: 2px solid #478bf9;
+            color: white;
+            background: #478bf9;
+            font: 400 13px "Lexend";
+          }
+        }
+      }
+    }
+  }
+}
