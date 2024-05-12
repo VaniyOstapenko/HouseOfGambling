@@ -162,6 +162,25 @@
 
 @media screen and (max-width: 400px) {
   .mainWrapper {
-    overflow: hidden;
+    .headerBlock {
+      .textHeader {
+        font: 500 46px "Lexend";
+        margin-left: -18px;
+        text-align: center;
+      }
+      .paragraphHeader {
+        font: 500 20px "Lexend";
+        width: 300px;
+        text-align: center;
+        margin-left: 30px;
+      }
+      .partnership {
+        width: 290px;
+        height: 50px;
+        padding: 19px 93px;
+        border-radius: 48px;
+        margin-left: 36px;
+      }
+    }
   }
 }
